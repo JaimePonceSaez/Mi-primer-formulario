@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Ejemplo</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos básicos para el formulario */
+        form {
+            font-family: Arial, sans-serif;
+            margin: auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            max-width: 400px;
+            background-color: #f9f9f9;
+        }
+
+        label, p {
+            margin-top: 10px;
+        }
+
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form action="process_form.php" method="post">
+        <h2>Formulario de Ejemplo</h2>
+        
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        
+        
+        
+        <
+<label for="mensaje">Mensaje:</label>
+        
+        <
+<textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        
+        
+  
+<p>Tipo de Usuario:</p>
+        <label><input type="radio" name="tipo_usuario" value="Alumno" required> Alumno</label><br>
+        <label><input type="radio" name="tipo_usuario" value="Profesor"> Profesor</label><br>
+        <label><input type="radio" name="tipo_usuario" value="Usuario Externo"> Usuario Externo</label><br>
+        
+        
+      
+
+    
+
+ 
+<button type="submit">Enviar</button>
+        
+  
+<button type="button" onclick="window.location.href='mailto:tu-email@example.com?subject=Formulario%20Enviado'">Enviar por Correo</button>
+    
+   
+</form>
